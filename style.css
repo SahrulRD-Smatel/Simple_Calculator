@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #202020;
+}
+
+.calculator {
+  width: 260px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+  color: white;
+  background-color: black;
+  text-align: right;
+  padding: 20px;
+  font-size: 2em;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+button {
+  font-size: 1.2em;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #333;
+  transition: background-color 0.3s;
+  border-radius: 2%; /* Membuat tombol berbentuk bulat */
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button.gray {
+  background-color: #6c6c6c;
+}
+
+button.gray:hover {
+  background-color: #7e7e7e;
+}
+
+button.orange {
+  background-color: #ff9500;
+}
+button.red {
+  background-color: #fd2c2c;
+}
+
+button.orange:hover {
+  background-color: #e88e00;
+}
+
+button.zero {
+  grid-column: span 2;
+}
